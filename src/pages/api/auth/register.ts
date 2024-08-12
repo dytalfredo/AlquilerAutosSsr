@@ -27,7 +27,7 @@ export const POST: APIRoute = async ({ request, redirect }) => {
     });
   } catch (error: any) {
     return new Response(
-      "Algo salió mal",
+      error,
       { status: 400 }
     );
   }
