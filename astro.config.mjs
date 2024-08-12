@@ -2,11 +2,10 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import icon from "astro-icon";
 
-import vercel from "@astrojs/vercel/serverless";
+import sitemap from "@astrojs/sitemap";
 
-// https://astro.build/config                     
+// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), icon()],
-  output: "server",
-  adapter: vercel()
-});             
+  site: 'https://latamstudyvisa.com/',
+  integrations: [tailwind(), icon(), sitemap()]
+});
