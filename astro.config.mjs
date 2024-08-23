@@ -8,8 +8,8 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://latamstudyvisa.com/',
-  integrations: [tailwind(), icon(), sitemap()],
+
+  integrations: [tailwind(), icon()],
   output: 'server',
   adapter: vercel()
 
