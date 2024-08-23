@@ -1,0 +1,73 @@
+---
+// Component Imports
+
+import HeroCurse from "../components/HeroCurse.astro";
+import WhatIs from "../components/WhatIs.astro";
+import WhyList from "../components/WhyList.astro";
+
+import FormularioContacto from "../components/FormularioContacto.astro";
+
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+    title="Cursos para examen TESOL | Aseroria profesional y garantizada"
+    url_canonical="https://latamstudyvisa.com/preparacion-tesol-caracteristicas/"
+    og_title="Cursos para examen TESOL | Aseroria profesional y garantizada"
+    og_descrip="Preparate para el examen TESOL de la mano de expertos| La preparación para educadores"
+    og_img="/opengraph/certificaciones-internacionales.jpg"
+    og_img_alt="Una esfera mundial encima de libros, certificaciones internacionales"
+>
+    <main class="bg-white">
+        <HeroCurse
+            src="/preparacion_toefl.jpg"
+            title="Curso Preparación TESOL"
+            sub="La certificación oficial para dar clases de inglés en el extranjero"
+        />
+
+        <WhatIs
+            title="TESOL"
+            sub=" Es una certificación internacional que califica a las personas para enseñar inglés a hablantes de otros idiomas. Este certificado es reconocido mundialmente y permite a los profesores enseñar inglés en diversos países, tanto en contextos donde el inglés es el idioma principal como en aquellos donde no lo es."
+        />
+        <div
+            class="flex justify-center gap-14 max-md:flex-col max-md:gap-4 max-md:items-center"
+        >
+            <WhyList title="Beneficios de tener un certificado TESOL ">
+                <ul class="text-center flex flex-col gap-8 text-xl mt-8">
+                    <li>Reconocimiento internacional.</li>
+                    <li>Mejora de las habilidades pedagógicas.</li>
+                    <li>Aumenta tus oportunidades laborales.</li>
+
+                    <li>Amplia la zona donde conseguir trabajos.</li>
+                    <li>Desarrollo personal.</li>
+                </ul>
+            </WhyList>
+            <WhyList title="¿Como obtener un certificado TESOL">
+                <ul class="text-center flex flex-col text-xl mt-8 gap-4">
+                    <li>Haber alcanzado la mayoría de edad.</li>
+                    <li>
+                        Demostrar un nivel de inglés avanzado que equivale a C1
+                        en la escala oficial de MCERL.
+                    </li>
+                    <li>
+                        Realizar la entrevista de admisión y haberla aprobado.
+                    </li>
+                    <li>
+                        Contar con experiencia de entre 120 y 134 horas de
+                        enseñanza dde inglés a hablantes de otros idiomas,
+                        capacitación y desarrollo del plan de estudio.
+                    </li>
+                </ul>
+            </WhyList>
+        </div>
+        <FormularioContacto
+            title="¿Quieres Prepararte Para Una Certificación TESOL?"
+        />
+    </main>
+</Layout>
+
+<style>
+    h2 {
+        text-shadow: 4px 4px 2px rgba(4, 39, 20, 0.6);
+    }
+</style>

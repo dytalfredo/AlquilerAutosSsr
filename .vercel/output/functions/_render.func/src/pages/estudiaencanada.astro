@@ -1,0 +1,46 @@
+---
+// Component Imports
+
+import CallToActionCountrys from "../components/CallToActionCountrys.astro";
+
+import FeatureCountry from "../components/FeatureCountry.astro";
+import HeroSeccionCountry from "../components/HeroSeccionCountry.astro";
+import FormularioContacto from "../components/FormularioContacto.astro";
+
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+    title="Cumple tu sueño de estudiar en Canadá | Aseroria profesional y garantizada"
+    url_canonical="https://latamstudyvisa.com/estudiaencanada/"
+    og_title="Cumple tu sueño de estudiar en Canadá | Aseroria profesional y garantizada"
+    og_descrip="Disfruta de una educación de clase mundial, una política de inmigración acogedora y una calidad de vida excepcional"
+    og_img="/opengraph/Estudia-en-canada.jpg"
+    og_img_alt="Una mujer frente a un lago, con la bandera de canada en la espalda"
+>
+    <main class="bg-white">
+        <HeroSeccionCountry
+            src="/estudiaencanada.jpg"
+            title="Canadá"
+            sub="Disfruta de una educación de clase mundial, una política de inmigración acogedora y una calidad de vida excepcional en un entorno multicultural vibrante"
+        />
+        <FeatureCountry
+            title="Canadá"
+            ,
+            sub="Estudiar inglés en Canadá es una oportunidad increíble para obtener una educación de alta calidad. Aquí tienes tres puntos destacados:"
+            ,
+            sTitle1="Excelencia Educativa y Oportunidades de Investigación"
+            ,
+            text1="Canadá es conocido por su sistema educativo de alta calidad y sus universidades de renombre mundial, como la Universidad de Toronto y la Universidad de British Columbia. Además, ofrece numerosas oportunidades de investigación y desarrollo en diversas áreas, lo que te permite estar a la vanguardia de tu campo de estudio."
+            ,
+            sTitle2="Oportunidades laborales abundantes"
+            ,
+            text2="Canadá tiene una política de inmigración abierta y acogedora, lo que facilita a los estudiantes internacionales obtener permisos de trabajo y residencia después de graduarse2. Esto significa que puedes planificar una carrera a largo plazo en Canadá, aprovechando las numerosas oportunidades laborales en sectores como la tecnología, la salud y la ingeniería."
+            ,
+            sTitle3="Calidad de Vida y Diversidad Cultural"
+            ,
+            text3="Canadá es consistentemente clasificado como uno de los mejores países para vivir debido a su alta calidad de vida, seguridad y servicios públicos eficientes. Además, es un país multicultural que celebra la diversidad, lo que te permitirá conocer y trabajar con personas de todo el mundo, enriqueciendo tu experiencia personal y profesional."
+        />
+        <FormularioContacto title="¿Quieres Estudiar y trabajar en Canadá?" />
+    </main>
+</Layout>

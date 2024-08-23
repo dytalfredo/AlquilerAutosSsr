@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1016.37 360.44">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #000;
+      }
+
+      .cls-5, .cls-2 {
+        font-size: 140.61px;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6, .cls-7, .cls-8, .cls-9 {
+        font-size: 140px;
+      }
+
+      .cls-4 {
+        font-family: AbrilFatface-Regular, 'Abril Fatface';
+      }
+
+      .cls-7 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <rect class="cls-3" x="40" width="54.16" height="164"/>
+    <rect class="cls-3" x="125.84" width="54.16" height="164"/>
+    <rect class="cls-3" x="67.12" y="224.88" width="49.25" height="183.48" transform="translate(408.37 224.88) rotate(90)"/>
+    <rect class="cls-3" x="201.37" y="234.62" width="49.25" height="164" transform="translate(542.62 90.63) rotate(90)"/>
+    <rect class="cls-3" x="88.38" y="-88.38" width="49.25" height="226" transform="translate(137.62 -88.38) rotate(90)"/>
+    <rect class="cls-3" x="40" y="175" width="54.16" height="164"/>
+    <rect class="cls-3" x="125.84" y="175" width="54.16" height="164"/>
+    <polygon class="cls-3" points="308 236.97 170 293 308 293 308 236.97"/>
+    <text class="cls-4" transform="translate(208.56 191.52) scale(.99 1)"><tspan class="cls-5" x="0" y="0">L</tspan><tspan class="cls-2" x="83.8" y="0">a</tspan><tspan class="cls-5" x="158.89" y="0">tam </tspan><tspan class="cls-9" x="441.65" y="0">S</tspan><tspan class="cls-6" x="525.65" y="0">t</tspan><tspan class="cls-9" x="580.11" y="0">u</tspan><tspan class="cls-7" x="664.81" y="0">d</tspan><tspan class="cls-8" x="744.33" y="0">y</tspan><tspan class="cls-5"><tspan x="0" y="128" xml:space="preserve">      </tspan><tspan class="cls-1" x="151.85" y="128">V</tspan><tspan x="246.06" y="128">isa</tspan></tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+---
+// Component Imports
+
+import CallToActionCountrys from "../components/CallToActionCountrys.astro";
+import HeroCurse from "../components/HeroCurse.astro";
+import FeatureCountry from "../components/FeatureCountry.astro";
+
+import FormularioContacto from "../components/FormularioContacto.astro";
+
+import Layout from "../layouts/Layout.astro";
+import MaestriaSeccion from "../components/MaestriaSeccion.astro";
+import WhyLarge from "../components/WhyLarge.astro";
+---
+
+<Layout title="Estudia y trabaja en Irlanda desde Argentina">
+    <main class="bg-white">
+        <HeroCurse
+            src="/maestrias-en-el-extranjero.jpg"
+            title="Maestrías en el extranjero"
+            sub="Las maestrías en Australia y Nueva Zelanda te abrirán las puertas a un sinfín de oportunidades."
+        />
+        <div class="mt-16"><MaestriaSeccion /></div>
+
+        <WhyLarge title="Requisitos para Aplicar a una Maestría.">
+            <ul class="text-center flex flex-col gap-8 text-xl mt-8">
+                <li>Poseer un título académico en alguna carrera.</li>
+                <li>
+                    Tener el nivel de inglés necesario para asistir a las clases
+                    <strong>(el nivel requerido varía en cada país).</strong>
+                </li>
+                <li>
+                    Obtener la admisión y aceptación en el programa de maestría
+                    de tu elección.
+                </li>
+
+                <li>Cumplir con los requisitos de algún proceso migratorio.</li>
+            </ul>
+        </WhyLarge>
+        <WhyLarge title=" ¿Cuándo Puedo Comenzar una Maestría?">
+            <ul class="text-center flex flex-col gap-8 text-xl mt-8">
+                <li>
+                    Las fechas de inicio de las maestrías varían según la
+                    institución. Debes inscribirte y aplicar a la visa de
+                    estudiante. Una vez aprobada la visa, podrás comenzar tu
+                    aventura académica en las fechas disponibles de cada
+                    institución.
+                </li>
+            </ul>
+        </WhyLarge>
+
+        <FormularioContacto
+            title="¿Quieres Realizar Una Maestría En El Extranjero?"
+        />
+    </main>
+</Layout>
