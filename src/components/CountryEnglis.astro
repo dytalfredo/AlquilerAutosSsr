@@ -1,0 +1,70 @@
+---
+import { Icon } from "astro-icon/components";
+import CountryEnglishItem from "./CountryEnglishItem.astro";
+---
+
+<section>
+    <div
+        class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 mt-14"
+    >
+        <div
+            class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16"
+        >
+            <div
+                class="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right"
+            >
+                <h2 class="text-3xl font-bold sm:text-4xl">
+                    Consigue el destino ideal para estudiar inglés.
+                </h2>
+
+                <p class="mt-4 text-gray-600">
+                    Participa en un curso de minimo 16 semanas en cualquiera de
+                    los siguientes destinos internacionales.
+                </p>
+                <h3 class="mt-4 text-gray-600">
+                    Recuerda para cada uno de los siguientes paises trabajamos
+                    con abogados migratorios especializados en visa de
+                    estudiantes.
+                </h3>
+
+                <a
+                    href="#formularioContacto"
+                    class="mt-8 inline-block rounded font-bold bg-amber-900 px-12 py-3 text-sm text-white transition hover:scale-110 focus:outline-none focus:ring tracking-wider focus:ring-yellow-400"
+                >
+                    Quiero hablar con un experto.
+                </a>
+            </div>
+
+            <div
+                class="grid grid-cols-2 place-content-center gap-4 sm:grid-cols-3"
+            >
+                <CountryEnglishItem
+                    title="Australia"
+                    src="/estudiaenaustralia"
+                    icon="flag:hm-4x3"
+                />
+
+                <CountryEnglishItem
+                    title="Inglaterra"
+                    src="/estudiaeninglaterra"
+                    icon="flag:gb-eng-4x3"
+                />
+                <CountryEnglishItem
+                    title="Irlanda"
+                    src="/estudiaenirlanda"
+                    icon="flag:ie-4x3"
+                />
+                <CountryEnglishItem
+                    title="Canadá"
+                    src="/estudiaencanada"
+                    icon="flag:ca-4x3"
+                />
+                <CountryEnglishItem
+                    title="N. Zelanda"
+                    src="/estudiaennuevazelanda"
+                    icon="flag:nz-4x3"
+                />
+            </div>
+        </div>
+    </div>
+</section>

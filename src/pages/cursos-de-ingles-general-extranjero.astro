@@ -1,0 +1,69 @@
+---
+// Component Imports
+
+import HeroVideoCurse from "../components/HeroVideoCurse.astro";
+import WhatIs from "../components/WhatIs.astro";
+import WhyList from "../components/WhyList.astro";
+
+import FormularioContacto from "../components/FormularioContacto.astro";
+
+import Layout from "../layouts/Layout.astro";
+import ListSeccin from "../components/ListSección.astro";
+import ImgBackground from "../components/ImgBackground.astro";
+import TravelsCards from "../components/TravelsCards.astro";
+import DesMenu from "../components/DesMenu.astro";
+import CountryEnglis from "../components/CountryEnglis.astro";
+---
+
+<Layout
+    title="Cursos de inglés en el extranjero | Acompañamiento completo"
+    url_canonical="https://latamstudyvisa.com/cursos-de-ingles-general-extranjero/"
+    og_title="Cursos de inglés en el extranjero | Acompañamiento completo"
+    og_descrip="¡Embárcate en una aventura educativa inolvidable y descubre la magia de aprender un idioma en el extranjero!"
+    og_img="/opengraph/openGraph-Estudia-Ingles.jpg"
+    og_img_alt="Diferentes destinos para estudiar inglés"
+>
+    <main class="bg-white">
+        <HeroVideoCurse />
+
+        <div
+            class="flex justify-center gap-14 max-md:flex-col max-md:gap-4 max-md:items-center mb-8"
+        >
+            <section class="p-8" id="siguiente-seccion">
+                <h2
+                    class="text-4xl text-gray-800 font-semibold text-center mb-4 tracking-wide"
+                >
+                    Estudia inglés en el extrangero con Latam Study Visa
+                </h2>
+                <p class="text-xl text-gray-700 text-center mt-4">
+                    ¡Embárcate en una aventura educativa inolvidable y descubre
+                    la magia de <strong
+                        >aprender un idioma en el extranjero</strong
+                    > mientras te sumerges en la belleza natural y la diversidad
+                    cultural de algunos de los <strong
+                        >destinos más impresionantes del mundo!.</strong
+                    >
+                </p>
+            </section>
+        </div>
+
+        <ListSeccin />
+
+        <CountryEnglis />
+
+        <ImgBackground />
+        <div class="blockAnimation">
+            <TravelsCards />
+        </div>
+        <div class="mt-12">
+            <FormularioContacto
+                title="¿Quieres estudiar inglés en el extranjero?"
+            />
+        </div>
+    </main>
+</Layout>
+
+<style>
+    h2 {
+    }
+</style>

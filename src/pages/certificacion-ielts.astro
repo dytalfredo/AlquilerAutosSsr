@@ -1,0 +1,87 @@
+---
+// Component Imports
+
+import HeroCurse from "../components/HeroCurse.astro";
+import WhatIs from "../components/WhatIs.astro";
+import WhyList from "../components/WhyList.astro";
+
+import FormularioContacto from "../components/FormularioContacto.astro";
+
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+    title="Cursos para examen IELTS | Aseroria profesional y garantizada"
+    url_canonical="https://latamstudyvisa.com/certificacion-ielts/"
+    og_title="Cursos para examen IELTS | Aseroria profesional y garantizada"
+    og_descrip="Preparate para el examen IELTS de la mano de expertos| ¡Estamos listos para ayudarte a conseguirlo!"
+    og_img="/opengraph/certificaciones-internacionales.jpg"
+    og_img_alt="Una esfera mundial encima de libros, certificaciones internacionales"
+>
+    <main class="bg-white">
+        <HeroCurse
+            src="/preparacion_toefl.jpg"
+            title="Curso Preparación IELTS"
+            sub="El examen que demuestra tu nivel de inglés oficial para estudia y trabaja en el exterior"
+        />
+
+        <WhatIs
+            title="IELTS"
+            sub="El IELTS es uno de los exámenes oficiales que te otorga un certificado el cual define tu nivel de inglés y tu capacidad para comunicarte en este idioma. Asimismo, el resultado de este examen demuestra el dominio que tienes en las diferentes habilidades de escritura, lectura, comunicación verbal y escucha."
+        />
+        <div
+            class="flex justify-center gap-14 max-md:flex-col max-md:gap-4 max-md:items-center"
+        >
+            <WhyList
+                title="Beneficios de tener una certificación de nivel C1 o mayor "
+            >
+                <ul class="text-center flex flex-col gap-8 text-xl mt-8">
+                    <li>
+                        Estudiar una maestría, en una universidad de países como
+                        <a href="/estudiaenaustralia">Australia</a>, Reino
+                        Unido, <a href="/estudiaennuevazelanda">Nueva Zelanda</a
+                        >, entre otros.
+                    </li>
+                    <li>
+                        Optar por una visa de trabajo en un país de habla
+                        inglesa.
+                    </li>
+                    <li>Comprobar tu capacidad para comunicarte en inglés.</li>
+
+                    <li>
+                        Cumplir con los requisitos de algún proceso migratorio.
+                    </li>
+                </ul>
+            </WhyList>
+            <WhyList title="¿Qué tan difícil es el examen IELTS">
+                <ul class="text-center flex flex-col text-xl mt-8 gap-4">
+                    <li>
+                        La dificultad del examen depende de tus habilidades
+                        comunicativas y de la fluidez que tengas en escucha,
+                        escritura, comunicación verbal y lectura.
+                    </li>
+                    <li>
+                        Generalmente, los estudiantes encuentran la sección de
+                        speaking más desafiante, ya que requiere un mayor nivel
+                        de improvisación para responder fluidamente en el
+                        momento de la pregunta
+                    </li>
+                    <li>
+                        Por tal razón, los cursos de preparación IELTS son una
+                        ayuda bastante útil para aumentar tu capacidad de
+                        respuesta inmediata y ampliar tu vocabulario.
+                    </li>
+                </ul>
+            </WhyList>
+        </div>
+        <FormularioContacto
+            title="¿Quieres Prepararte Para Para Hacer El Examen IELTS?"
+        />
+    </main>
+</Layout>
+
+<style>
+    h2 {
+        text-shadow: 4px 4px 2px rgba(4, 39, 20, 0.6);
+    }
+</style>

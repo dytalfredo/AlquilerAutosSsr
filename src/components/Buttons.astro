@@ -1,0 +1,12 @@
+---
+interface Props {
+    title?: string;
+}
+
+const { title } = Astro.props;
+---
+
+<button
+    class="block font-semibold py-1 px-4 mx-auto mt-2 text-amber-50 bg-amber-900 hover:scale-95 hover:bg-amber-200 text-lg border-solid border-2 border-amber-900 rounded-full shadow-sm shadow-amber-700 hover:shadow-none hover:text-amber-900 transition duration-300"
+    >✉️ <a href="#formularioContacto" rel="noreferrer">{title}</a>
+</button>

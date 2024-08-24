@@ -1,0 +1,94 @@
+---
+// Component Imports
+
+import HeroCurse from "../components/HeroCurse.astro";
+import WhatIs from "../components/WhatIs.astro";
+import WhyLarge from "../components/WhyLarge.astro";
+import WhyBento from "../components/WhyBento.astro";
+
+import FormularioContacto from "../components/FormularioContacto.astro";
+
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+    title="Cursos vocacionales en el Extranjero | Preparate para la vida laboral"
+    url_canonical="https://latamstudyvisa.com/entrenamientovocacional/"
+    og_title="Cursos vocacionales en el Extranjero | Preparate para la vida laboral"
+    og_descrip="Comienza tu vida laboral en el extranjero lo más pronto posible con los cursos vocaciones más modernos de habla inglesa."
+    og_img="/opengraph/cursos_vet.jpg"
+    og_img_alt="Jovenes aprendiendo electricidad con la ayuda de un profesor de habla inglesa"
+>
+    <main class="bg-white">
+        <HeroCurse
+            src="/talleresvocacionales.jpg"
+            title="Curso Vocacionales"
+            sub="Comienza tu vida laboral en el extranjero lo más pronto posible con los cursos vocaciones más modernos de habla inglesa."
+        />
+
+        <WhatIs
+            title="VET"
+            sub="Los cursos de entrenamiento o vocacionales se centran en un oficio específico y son impartidos por profesionales del sector."
+        />
+        <div
+            class="flex justify-center gap-14 max-md:flex-col max-md:gap-4 max-md:items-center"
+        >
+            <WhyLarge
+                title="Por qué realiar un curso vocacional en el extanjero "
+            >
+                <ul class="text-center flex flex-col gap-8 text-xl mt-8">
+                    <li>
+                        En comparación con otros programas educativos, los
+                        cursos VET tienen periodos estandarizados que permite a
+                        los estudiantes incorporarse al mercado laboral más
+                        rápidamente, Las cursada pueden ser elegidas desde un
+                        Certificado III a un Diploma avanzado incluyendo el
+                        paquete completo.
+                    </li>
+                </ul>
+            </WhyLarge>
+        </div>
+
+        <div
+            class="flex justify-center max-w-6xl gap-14 max-md:flex-col max-md:gap-4 max-md:items-center m-auto"
+        >
+            <WhyBento title="Oportunidades laborales">
+                <ul class="text-center flex flex-col gap-8 text-xl mt-8">
+                    <li>
+                        Al completar un curso VET, los estudiantes tienen la
+                        oportunidad de trabajar en Australia en sus campos de
+                        estudio durante o después de sus estudios.
+                    </li>
+                </ul>
+            </WhyBento>
+            <WhyLarge title="Reconocimiento internacional">
+                <ul class="text-center flex flex-col gap-8 text-xl mt-8">
+                    <li>
+                        Los certificados y calificaciones obtenidos a través de
+                        cursos VET son reconocidos a nivel internacional, lo que
+                        mejora las oportunidades de empleo en todo el mundo.
+                    </li>
+                </ul>
+            </WhyLarge>
+            <WhyBento title="Variedad de disciplinas">
+                <ul class="text-center flex flex-col gap-8 text-xl mt-8">
+                    <li>
+                        Los cursos VET abarcan una amplia gama de disciplinas,
+                        lo que brinda a los estudiantes la libertad de elegir un
+                        área de estudio que se alinee con sus intereses y metas
+                        profesionales.
+                    </li>
+                </ul>
+            </WhyBento>
+        </div>
+        <FormularioContacto
+            title="¿Quieres prepararte en algun curso vocacional?"
+        />
+    </main>
+</Layout>
+
+<style>
+    h2 {
+        text-shadow: 4px 4px 2px rgba(4, 39, 20, 0.6);
+    }
+</style>

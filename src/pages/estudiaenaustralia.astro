@@ -1,0 +1,48 @@
+---
+// Component Imports
+
+import CallToActionCountrys from "../components/CallToActionCountrys.astro";
+
+import FeatureCountry from "../components/FeatureCountry.astro";
+import HeroSeccionCountry from "../components/HeroSeccionCountry.astro";
+import FormularioContacto from "../components/FormularioContacto.astro";
+
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+    title="Cursos de inglés en Australia | Aseroria profesional y garantizada"
+    url_canonical="https://latamstudyvisa.com/estudiaenaustralia/"
+    og_title="Cursos de inglés en Australia | Aseroria profesional y garantizada"
+    og_descrip="¿Quieres estudiar y trabajar en Australia? | ¡Estamos listos para ayudarte a conseguirlo!"
+    og_img="/opengraph/Estudia-y-trebaja-en-australia.jpg"
+    og_img_alt="Mapa de Australia digital, con un boton para conocer los requisitos para estudiar en australia"
+>
+    <main class="bg-white">
+        <HeroSeccionCountry
+            src="/australiastudy.jpg"
+            title="Australia"
+            sub="Donde el Inglés se Fusiona con Aventuras Inolvidables"
+        />
+        <FeatureCountry
+            title="Australia"
+            ,
+            sub="Estudiar idiomas en Australia es una experiencia fascinante. Aquí tienes tres puntos destacados:"
+            ,
+            sTitle1="Inmersión lingüística y cultural"
+            ,
+            text1="En Australia, no solo aprenderás inglés, sino que también vivirás una inmersión completa en la cultura australiana. Desde las playas de Gold Coast hasta las ciudades vibrantes como Sídney y Melbourne, tendrás la oportunidad de practicar el idioma en situaciones reales."
+            ,
+            sTitle2="Variedad de cursos"
+            ,
+            text2="Australia ofrece una amplia gama de cursos de inglés para satisfacer diferentes necesidades. Puedes elegir entre: mejorar tus habilidades comunicativas diarias, prepárate para estudiar en instituciones australianas. Enfocarte en contextos profesionales o académicos específicos y prepararte para exámenes como el IELTS, TOEFL, TOEIC u otros."
+            ,
+            sTitle3="Visa de estudiante y aventura"
+            ,
+            text3="Australia permite trabajar mientras estudias, lo que brinda una experiencia completa. Además, su entorno natural espectacular te invita a explorar y vivir aventuras únicas."
+        />
+        <FormularioContacto
+            title="¿Quieres Estudiar y trabajar en Australia?"
+        />
+    </main>
+</Layout>

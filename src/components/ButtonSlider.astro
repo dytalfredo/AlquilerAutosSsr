@@ -1,0 +1,15 @@
+---
+interface Props {
+    id?: string;
+    arrow: string;
+}
+const { id, arrow } = Astro.props;
+---
+
+<button
+    aria-label="Previous slide"
+    id={id}
+    class={`rounded-full border border-amber-900 ${arrow} p-3 text-amber-900 transition hover:bg-amber-600 hover:text-green-900`}
+>
+    ⬇
+</button>

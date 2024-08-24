@@ -1,0 +1,46 @@
+---
+// Component Imports
+
+import CallToActionCountrys from "../components/CallToActionCountrys.astro";
+
+import FeatureCountry from "../components/FeatureCountry.astro";
+import HeroSeccionCountry from "../components/HeroSeccionCountry.astro";
+import FormularioContacto from "../components/FormularioContacto.astro";
+
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+    title="Cursos de inglés en Irlanda | Aseroria profesional y garantizada"
+    url_canonical="https://latamstudyvisa.com/estudiaenirlanda/"
+    og_title="Cursos de inglés en Irlanda | Aseroria profesional y garantizada"
+    og_descrip="¿Quieres estudiar y trabajar en Irlanda? | ¡Estamos listos para ayudarte a conseguirlo!"
+    og_img="/opengraph/Estudia-en-irlanda.jpg"
+    og_img_alt="Estudia en Irlanda con Latam Study Visa"
+>
+    <main class="bg-white">
+        <HeroSeccionCountry
+            src="/irlandastudy.jpg"
+            title="Irlanda"
+            sub="Descubre la Magia del Inglés en Irlanda"
+        />
+        <FeatureCountry
+            title="Irland"
+            ,
+            sub="Estudiar idiomas en Irlanda es una experiencia enriquecedora. Aquí tienes tres puntos destacados:"
+            ,
+            sTitle1="Inmersión lingüística"
+            ,
+            text1="En Irlanda, estarás rodeado de hablantes nativos de inglés. Esto te brinda la oportunidad de practicar constantemente y mejorar tus habilidades lingüísticas. Además, podrás aprender expresiones y modismos locales que no encontrarías en un aula tradicional."
+            ,
+            sTitle2="Calidad de vida"
+            ,
+            text2="Irlanda es conocida por su belleza natural, desde los acantilados de Moher hasta los lagos de Killarney. Además, la gente es amigable y acogedora. Puedes disfrutar de actividades al aire libre, como senderismo, ciclismo y exploración de castillos históricos."
+            ,
+            sTitle3="Educación de calidad"
+            ,
+            text3="Los institutos de idiomas en Irlanda ofrecen programas de alta calidad. Además de las escuelas que mencioné previamente, también puedes considerar el Dublin City University Language Services y el Galway Cultural Institute. Estas instituciones se centran en la enseñanza efectiva del inglés y ofrecen una variedad de cursos adaptados a diferentes niveles y necesidades."
+        />
+        <FormularioContacto title="¿Quieres Estudiar y trabajar en Irlanda?" />
+    </main>
+</Layout>

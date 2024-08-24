@@ -1,0 +1,71 @@
+---
+import ButtonSlider from "./ButtonSlider.astro";
+import TestimonialCard from "./TestimonialCard.astro";
+---
+
+<link
+    href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css"
+    rel="stylesheet"
+/>
+
+<script type="module">
+    import KeenSlider from "https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm";
+
+    const keenSlider = new KeenSlider(
+        "#keen-slider",
+        {
+            loop: true,
+            slides: {
+                origin: "center",
+                perView: 1.25,
+                spacing: 16,
+            },
+            breakpoints: {
+                "(min-width: 800px)": {
+                    slides: {
+                        origin: "auto",
+                        perView: 2.5,
+                        spacing: 32,
+                    },
+                },
+            },
+        },
+        [],
+    );
+
+    const keenSliderPrevious = document.getElementById("keen-slider-previous");
+    const keenSliderNext = document.getElementById("keen-slider-next");
+
+    keenSliderPrevious.addEventListener("click", () => keenSlider.prev());
+    keenSliderNext.addEventListener("click", () => keenSlider.next());
+</script>
+
+<section class="bg-green-100/50 testimonial">
+    <div
+        class="mx-auto max-w-[1340px] px-4 py-4 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24"
+    >
+        <div
+            class="mt-14 max-w-7xl items-end justify-evenly sm:flex sm:pe-6 lg:pe-8"
+        >
+            <h2
+                class="max-w-2xl text-4xl font-normal tracking-tight text-gray-700 sm:text-5xl"
+            >
+                Conoce lo que nuestros clientes dicen de nosotros
+            </h2>
+
+            <div class="mt-8 flex gap-8 lg:mt-0">
+                <ButtonSlider id="keen-slider-previous" , arrow="rotate-90" />
+                <ButtonSlider id="keen-slider-next" , arrow="-rotate-90" />
+            </div>
+        </div>
+
+        <div class="-mx-6 mt-8">
+            <div id="keen-slider" class="keen-slider">
+                <TestimonialCard />
+                <TestimonialCard />
+                <TestimonialCard />
+                <TestimonialCard />
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,20 @@
+---
+interface Props {
+    title?: string;
+    src?: string;
+    sub: string;
+}
+
+const { title, src, sub } = Astro.props;
+---
+
+<section class="p-8 mt-10" id="siguiente-seccion">
+    <h2
+        class="text-4xl text-gray-800 font-semibold text-center mb-4 tracking-wide"
+    >
+        ¿Que es el {title}?
+    </h2>
+    <p class="text-xl text-gray-700 text-center mt-4">
+        {sub}
+    </p>
+</section>

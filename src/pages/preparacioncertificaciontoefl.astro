@@ -1,0 +1,82 @@
+---
+// Component Imports
+
+import HeroCurse from "../components/HeroCurse.astro";
+import WhatIs from "../components/WhatIs.astro";
+import WhyList from "../components/WhyList.astro";
+
+import FormularioContacto from "../components/FormularioContacto.astro";
+
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+    title="Preparación examen TOEFL| Aseroria profesional y garantizada"
+    url_canonical="https://latamstudyvisa.com/preparacioncertificaciontoefl/"
+    og_title="Preparación examen TOEFL| Aseroria profesional y garantizada"
+    og_descrip="La certificación internacional mas importante TOEFL| La preparación especializada para la titulación de inglés más aceptada del mundo"
+    og_img="/opengraph/preparacion-tofel.jpg"
+    og_img_alt="Una esfera mundial encima de libros, certificaciones TOEFL"
+>
+    <main class="bg-white">
+        <HeroCurse
+            src="/preparacion_toefl.jpg"
+            title="Curso Preparación TOEFL"
+            sub="La preparación especializada para la titulación de inglés más aceptada del mundo"
+        />
+
+        <WhatIs
+            title="TOEFL"
+            sub=" Es una prueba estandarizada que evalúa el dominio del idioma inglés en personas cuya lengua materna no es el inglés. Se utiliza ampliamente en instituciones académicas y profesionales de habla inglesa en todo el mundo. El examen mide habilidades como comprensión auditiva, lectura, escritura y expresión oral."
+        />
+        <div
+            class="flex justify-center gap-14 max-md:flex-col max-md:gap-4 max-md:items-center"
+        >
+            <WhyList title="Beneficios de contratar una preparación TOEFL">
+                <ul class="text-center flex flex-col gap-8 text-xl mt-8">
+                    <li>
+                        Prepárate para las mejores universidades de New Zelanda,
+                        Irlanda, Canadá, Inglaterra y otros.
+                    </li>
+                    <li>Mejora tu puntaje en el TOEFL.</li>
+                    <li>Un TOEFL® ibT reconocido internacionalmente.</li>
+
+                    <li>
+                        Mejora tu CV y aumenta la oportunidad de tener éxito
+                        profesional en el futuro.
+                    </li>
+                </ul>
+            </WhyList>
+            <WhyList title="Paises donde prepararse para una preparación TOEFL">
+                <ul class="text-center flex flex-col text-xl mt-8">
+                    <li>Australia.</li>
+                    <li>Canadá.</li>
+                    <li>Irlanda.</li>
+                    <li>Inglaterra.</li>
+                    <li>New Zelanda.</li>
+                    <li>New Zelanda.</li>
+                </ul>
+                <h2
+                    class="text-4xl text-gray-50 font-semibold text-center mb-4 mt-4 tracking-wider"
+                >
+                    Objetivo
+                </h2>
+                <p class="text-center text-xl mt-8">
+                    Evalúa las habilidades de comprensión y uso del inglés a
+                    nivel universitario en las cuatro áreas: Listening
+                    (comprensión auditiva), Reading (lectura), Speaking
+                    (expresión oral) y Writing (escritura).
+                </p>
+            </WhyList>
+        </div>
+        <FormularioContacto
+            title="¿Quieres Prepararte Para Una Certificación TOEFL?"
+        />
+    </main>
+</Layout>
+
+<style>
+    h2 {
+        text-shadow: 4px 4px 2px rgba(4, 39, 20, 0.6);
+    }
+</style>

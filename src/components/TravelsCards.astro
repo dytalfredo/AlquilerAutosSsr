@@ -1,0 +1,42 @@
+---
+import CardTravel from "./CardTravel.astro";
+---
+
+<div class="flex max-md:flex-col max-w-[80%] m-auto">
+    <div class="flex-grow mt-10 -rotate-6">
+        <CardTravel
+            title="Australia"
+            ,
+            link="/estudiaenaustralia"
+            ,
+            img="/visaaustralia2.jpg"
+            ,
+            studies="57"
+        />
+        <!-- Contenido de la primera tarjeta -->
+    </div>
+    <div class="flex-grow rotate-3">
+        <CardTravel
+            title="Nueva Zelanda"
+            ,
+            link="/estudiaennuevazelanda"
+            ,
+            img="/visanuevazelanda.jpg"
+            ,
+            studies="150"
+        />
+        <!-- Contenido de la segunda tarjeta -->
+    </div>
+    <div class="flex-grow mt-10 rotate-6 max-md:mt-4 max-md:-rotate-6">
+        <CardTravel
+            title="Irlanda"
+            ,
+            link="/estudiaenirlanda"
+            ,
+            img="/visairlanda.jpg"
+            ,
+            studies="100"
+        />
+        <!-- Contenido de la tercera tarjeta -->
+    </div>
+</div>

@@ -1,0 +1,30 @@
+---
+interface Props {
+    number: string;
+    preposition: string;
+}
+
+const { number, preposition } = Astro.props;
+---
+
+<div
+    class="bento bg-lime-400 border-solid text-lime-950 text-lg font-extrabold rounded-full shadow-md shadow-gray-900 rotate-3 border-lime-900 border-4 p-1"
+>
+    <p>{number}<sup>{preposition}</sup>Paso:</p>
+</div>
+
+<style>
+    .bento {
+        font-family: "Vujahday Script", cursive;
+        position: absolute;
+        z-index: 2;
+        top: 0.5rem;
+        left: 1rem;
+        text-shadow:;
+        overflow: hidden;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>

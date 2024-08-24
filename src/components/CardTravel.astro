@@ -1,0 +1,34 @@
+---
+interface Props {
+    title?: string;
+    link?: string;
+    img?: string;
+    studies?: string;
+}
+const { title, link, img, studies } = Astro.props;
+---
+
+<div class="flex justify-center items-center max-w-1/3">
+    <div
+        class="p-4 bg-white rounded-sm shadow-xl hover:shadow-2xl hover:scale-105 transition-all transform duration-500"
+    >
+        <img
+            class="w-60 object-cover rounded-t-md"
+            src={img}
+            alt="visa estudiantil en el extranjero"
+        />
+        <div class="">
+            <h3 class="text-base font-bold text-gray-800">{title}</h3>
+            <div class="mb-2 flex justify-between">
+                <button
+                    class="block text-xs font-regular text-gray-800 cursor-auto"
+                    >{studies} estudiantes</button
+                >
+                <button
+                    class="text-lg block font-semibold py-2 px-6 text-white bg-lime-950 hover:text-lime-950 hover:bg-lime-500 border-solid border-2 border-lime-900 rounded-full shadow hover:shadow-md transition duration-300 tracking-wider"
+                    ><a href={link}>Leer más...</a></button
+                >
+            </div>
+        </div>
+    </div>
+</div>

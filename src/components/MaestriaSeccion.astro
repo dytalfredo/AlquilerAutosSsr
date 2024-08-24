@@ -1,0 +1,37 @@
+---
+import ListElement from "./ListElement.astro";
+---
+
+<section class="bg-lime-900 text-white">
+    <div class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+        <div class="max-w-xl mx-auto">
+            <h2
+                class="text-3xl font-bold sm:text-4xl text-pretty tracking-wider"
+            >
+                ¿Beneficios de cursar una maestría en el extranjero?
+            </h2>
+
+            <p class="mt-4 text-gray-50 text-center text-balance">
+                A diferencia de la visa de estudiante para cursos de inglés o
+                VET (Cursos de Educación y Capacitación Vocacional), obtendrás
+                beneficios adicionales. Entre ellos:
+            </p>
+        </div>
+
+        <div
+            class="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3"
+        >
+            <ListElement
+                title="Educación gratuita para los hijos incluidos en la visa."
+            />
+            <ListElement
+                title="Posibilidad de que tu pareja trabaje a tiempo completo."
+            />
+            <ListElement title="Acceso a mejores oportunidades laborales." />
+        </div>
+    </div>
+</section>
+<style>
+    h2 {
+    }
+</style>

@@ -1,0 +1,292 @@
+---
+import Numberstep from "./Numberstep.astro";
+import Buttons from "./Buttons.astro";
+import "@fontsource/abril-fatface";
+---
+
+<div class="relative pt-6 view">
+    <h2
+        class="mt-28 mb-4 text-4xl py-4 font-semibold text-white bg-lime-900 border-solid border-4 border-lime-900 capitalize tracking-widest"
+    >
+        Pasos para cumplir tus sueños
+    </h2>
+    <p class="text-xl text-gray-700 text-center max-w-2xl mx-auto">
+        Conoce los 5 pasos a seguir para hacer realidad tus sueño de estudiar y
+        trabajar en el extranjero.
+    </p>
+
+    <div class="flex items-center justify-center mt-2 pt-10 pb-10">
+        <div
+            class="grid h-full w-5/6 gap-2 p-2 grid-cols-3 grid-rows-3 rounded-lg shadow-md max-md:grid-rows-1 max-md:grid-cols-1 max-md:w-full max-md:gap-x-0 max-md:px-0"
+        >
+            <div
+                class="relative col-span-1 bg-cover bg-center bento1 row-span-1 bg-pink-200 animation rounded-lg shadow-md p-4 overflow-hidden"
+            >
+                <Numberstep number="1" , preposition="er" />
+                <div
+                    class="backdrop-brightness-50 backdrop-blur-sm bg-black/5 rounded p-4 shadow-lg"
+                >
+                    <h3
+                        class="font-bold text-pretty text-lime-50 text-2xl text-right pb-3"
+                    >
+                        Mensaje inicial
+                    </h3>
+                    <p class="pt-3 text-center text-pretty text-white text-md">
+                        <strong
+                            >El primer paso en tu camino es enviarnos un correo.</strong
+                        > Comparte con nosotros su destino de interés y, con gusto,
+                        <strong
+                            >nos comunicaremos para ofrecerle nuestra asistencia
+                            personalizada sin costo alguno.</strong
+                        >
+                    </p>
+                    <Buttons title="Contactar" />
+                </div>
+            </div>
+
+            <div
+                class="col-span-2 relative bento2 row-span-1 bg-lime-900 animationR rounded-lg shadow-md items-center justify-center p-4 overflow-hidden"
+            >
+                <Numberstep number="2" , preposition="do" />
+                <div
+                    class="flex rounded shadow-lg h-full relative max-md:flex-col"
+                >
+                    <!-- Imagen -->
+                    <div class="w-1/3 h-full max-md:w-full">
+                        <img
+                            src="2.jpg"
+                            alt="Segundo paso de como obtener visa estudiantil"
+                            class="object-cover w-full rounded-l h-full"
+                        />
+                    </div>
+
+                    <!-- Texto -->
+                    <div
+                        class="w-2/3 p-4 backgroundCircle relative z-10 max-md:w-full"
+                    >
+                        <h3
+                            class="font-bold text-pretty text-lime-50 text-2xl text-left pb-3"
+                        >
+                            Asesoramiento y matricula
+                        </h3>
+                        <p
+                            class="pt-3 text-center text-pretty text-white text-md"
+                        >
+                            Un asesor se comunicará contigo para colaborar en la
+                            <strong>creación de un plan personalizado.</strong> Juntos
+                            explorarán opciones para encontrar la ciudad de tu preferencia
+                            y <strong
+                                >el curso que se ajuste a tus intereses y metas
+                                profesionales,</strong
+                            > siempre considerando el tiempo que deseas vivir esta
+                            experiencia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="col-span-2 relative bento3 row-span-1 bg-lime-900 animation rounded-lg items-center justify-center p-4 overflow-hidden"
+            >
+                <Numberstep number="3" , preposition="er" />
+                <div
+                    class="flex rounded shadow-lg h-full relative max-md:flex-col-reverse"
+                >
+                    <!-- Imagen -->
+                    <div class="w-2/3 h-full max-md:w-full px-4">
+                        <h3
+                            class="font-bold text-pretty text-lime-50 text-2xl text-right pb-3"
+                        >
+                            Aplicación a la visa
+                        </h3>
+                        <p
+                            class="pt-3 text-center text-white text-md text-pretty"
+                        >
+                            Nos comprometemos en ayudarte a obtener la visa de
+                            forma rapida y sencilla. Nos ocuparemos de gestionar
+                            meticulosamente cada paso necesario, siempre al
+                            margen de la ley, <strong
+                                >permitiéndote enfocarte en aspectos más
+                                placenteros de tu aventura.</strong
+                            >
+                        </p>
+                    </div>
+                    <div class="w-5/12 h-full max-md:w-full">
+                        <img
+                            src="3.jpg"
+                            alt="Segundo paso de como obtener visa estudiantil"
+                            class="object-cover w-full rounded-l h-full"
+                        />
+                    </div>
+
+                    <!-- Texto -->
+                </div>
+            </div>
+
+            <div
+                class="overflow-hidden col-span-1 relative row-span-2 bg-tan-200 animationR rounded-lg shadow-md flex items-center justify-start bg-cover bg-center bento5 p-4"
+            >
+                <Numberstep number="5" , preposition="o" />
+                <div
+                    class="backdrop-brightness-50 backdrop-blur-sm bg-black/5 rounded p-4 shadow-lg"
+                >
+                    <h3
+                        class="font-bold text-pretty text-lime-50 text-2xl text-right pb-3"
+                    >
+                        Hasta el final
+                    </h3>
+                    <p class="pt-3 text-center text-pretty text-white text-md">
+                        En Latam Study Visa entendemos que participar en un
+                        programa de intercambio estudiantil representa <strong
+                            >un hito significativo en el crecimiento individual
+                            y la carrera de nuestros clientes.</strong
+                        >
+                        Por ello, brindamos asesoramiento continuo desde el inicio
+                        hasta la conclusión de su viaje educativo, <strong
+                            >asegurándonos de satisfacer todas sus expectativas
+                            y requerimientos.</strong
+                        >
+                    </p>
+                </div>
+            </div>
+            <div
+                class="col-span-2 relative bento4 row-span-1 bg-cyan-900 rounded-lg animation shadow-md items-center justify-center p-4 overflow-hidden"
+            >
+                <Numberstep number="4" , preposition="o" />
+                <div
+                    class="flex rounded shadow-lg h-full relative max-md:flex-col-reverse"
+                >
+                    <!-- Imagen -->
+                    <div
+                        class="w-2/3 p-4 relative z-10 backgroundCircle2 max-md:w-full"
+                    >
+                        <h3
+                            class="font-bold text-pretty text-lime-50 text-2xl text-right pb-3"
+                        >
+                            Salida y llegada
+                        </h3>
+                        <p
+                            class="pt-3 text-center text-pretty text-white text-md"
+                        >
+                            De la mano de profesionales altamente capacitados
+                            que te <strong
+                                >guiaran en trámites de vuelo, búsqueda de
+                                alojamiento, trabajo, adaptación en el país
+                                escogido</strong
+                            > y todo lo que sea necesario para que tu viaje sea una
+                            <strong>experiencia inolvidable.</strong>
+                        </p>
+                    </div>
+                    <div class="w-1/3 h-full max-md:w-full">
+                        <img
+                            src="5.jpg"
+                            alt="Segundo paso de como obtener visa estudiantil"
+                            class="object-cover w-full rounded-l h-full"
+                        />
+                    </div>
+
+                    <!-- Texto -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .bento1 {
+        background-image: url("roadtodream.jpg");
+    }
+    .bento5 {
+        background-image: url("8.jpg");
+    }
+
+    h3,
+    h2 {
+        font-family: "Abril Fatface", system-ui;
+        letter-spacing: 0.2rem;
+        color: white;
+        /* text-shadow: 3px 2px 5px #061b33; */
+
+        /* text-shadow:
+            1px 0px 1px #232325,
+            0px 1px 1px #232325,
+            2px 1px 1px #232325,
+            1px 2px 1px #232325,
+            3px 2px 1px #232325,
+            2px 3px 1px #232325,
+            4px 3px 1px #232325,
+            3px 4px 1px #232325,
+            5px 4px 1px #232325,
+            4px 5px 1px #232325,
+            6px 5px 1px #232325,
+            5px 6px 1px #232325,
+            7px 6px 1px #232325;*/
+    }
+
+    @keyframes anim {
+        from {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    @keyframes animR {
+        from {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .animation {
+        animation: anim linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 30%;
+    }
+    .animationR {
+        animation: animR linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 30%;
+    }
+
+    .backgroundCircle::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -15%;
+        width: 30%;
+        border-radius: 50%;
+        z-index: -1;
+        height: 100%;
+        background-color: rgb(53 83 20 / var(--tw-bg-opacity));
+    }
+    .backgroundCircle2::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -15%;
+        width: 30%;
+        border-radius: 50%;
+        z-index: -1;
+        height: 100%;
+        background-color: rgb(22 78 99);
+    }
+
+    .clic {
+        clip-path: polygon(
+            0 11%,
+            100% 0,
+            100% 30%,
+            100% 87%,
+            0 100%,
+            0 100%,
+            0% 30%
+        );
+    }
+</style>

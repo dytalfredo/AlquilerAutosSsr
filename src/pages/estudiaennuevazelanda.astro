@@ -1,0 +1,48 @@
+---
+// Component Imports
+
+import CallToActionCountrys from "../components/CallToActionCountrys.astro";
+
+import FeatureCountry from "../components/FeatureCountry.astro";
+import HeroSeccionCountry from "../components/HeroSeccionCountry.astro";
+import FormularioContacto from "../components/FormularioContacto.astro";
+
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+    title="Cursos de inglés en Nueva Zelanda | Aseroria profesional y garantizada"
+    url_canonical="https://latamstudyvisa.com/estudiaennuevazelanda/"
+    og_title="Cursos de inglés en Nueva Zelanda | Aseroria profesional y garantizada"
+    og_descrip="¿Quieres estudiar y trabajar en Nueva Zelanda? | ¡Estamos listos para ayudarte a conseguirlo!"
+    og_img="/opengraph/Estudia-en-nueva-zelanda.jpg"
+    og_img_alt="Estudia en Nueva Zelanda con Latam Study Visa"
+>
+    <main class="bg-white">
+        <HeroSeccionCountry
+            src="/nuevazelandastudy.jpg"
+            title="Nueva Zelanda"
+            sub="Donde la Educación se Fusiona con la Naturaleza"
+        />
+        <FeatureCountry
+            title="Nueva Zelanda"
+            ,
+            sub="Estudiar idiomas en Nueva Zelanda es una experiencia fascinante. Aquí tienes tres puntos destacados:"
+            ,
+            sTitle1="Calidad educativa"
+            ,
+            text1="Nueva Zelanda ofrece una educación de alta calidad. Escuelas como New Zealand Language Centre1 brindan una variedad de cursos, desde inglés general hasta preparación para exámenes como Cambridge y IELTS. Además, la metodología de enseñanza es efectiva y adaptada a diferentes niveles."
+            ,
+            sTitle2="Entorno natural espectacular"
+            ,
+            text2="Imagina estudiar rodeado de paisajes impresionantes: montañas, playas, lagos y bosques. Nueva Zelanda es un paraíso para los amantes de la naturaleza. Puedes combinar tus clases con actividades al aire libre y explorar la belleza kiwi."
+            ,
+            sTitle3="Cultura diversa y acogedora"
+            ,
+            text3="Los neozelandeses, conocidos como “kiwis”, son amigables y hospitalarios. Tendrás la oportunidad de sumergirte en su cultura, aprender sobre la herencia maorí y participar en festivales y eventos locales."
+        />
+        <FormularioContacto
+            title="¿Quieres Estudiar y trabajar en Nueva Zelanda?"
+        />
+    </main>
+</Layout>

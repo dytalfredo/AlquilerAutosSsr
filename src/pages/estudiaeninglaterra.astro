@@ -1,0 +1,48 @@
+---
+// Component Imports
+
+import CallToActionCountrys from "../components/CallToActionCountrys.astro";
+
+import FeatureCountry from "../components/FeatureCountry.astro";
+import HeroSeccionCountry from "../components/HeroSeccionCountry.astro";
+import FormularioContacto from "../components/FormularioContacto.astro";
+
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+    title="Cursos de inglés en inglaterra | Aseroria profesional y garantizada"
+    url_canonical="https://latamstudyvisa.com/estudiaeninglaterra/"
+    og_title="Cursos de inglés en Inglaterra | Aseroria profesional y garantizada"
+    og_descrip="¿Quieres estudiar y trabajar en Inglaterra? | ¡Estamos listos para ayudarte a conseguirlo!"
+    og_img="/opengraph/Estudia-en-inglaterra.jpg"
+    og_img_alt="Estudia en Inglaterra con Latam Study Visa"
+>
+    <main class="bg-white">
+        <HeroSeccionCountry
+            src="/estudiaeninglaterra.jpg"
+            title="Inglaterra"
+            sub="Donde el Inglés se Fusiona con Aventuras Inolvidables"
+        />
+        <FeatureCountry
+            title="Inglaterra"
+            ,
+            sub="Estudiar inglés en Inglaterra es un salto de calidad. Aquí tienes tres puntos destacados:"
+            ,
+            sTitle1="Calidad educativa de clase mundial"
+            ,
+            text1="Inglaterra alberga algunas de las universidades más prestigiosas del mundo, como la Universidad de Oxford y la Universidad de Cambridge. Además, muchas otras instituciones ofrecen programas académicos de alta calidad en una amplia variedad de disciplinas1. Estudiar en Inglaterra te brinda acceso a una educación de primer nivel y a una red global de contactos profesionales."
+            ,
+            sTitle2="Oportunidades laborales abundantes"
+            ,
+            text2="Inglaterra tiene una economía sólida y diversificada, con muchas oportunidades laborales en sectores como la tecnología, las finanzas, la salud y la creatividad2. Además, las empresas en Inglaterra están acostumbradas a contratar a extranjeros, lo que facilita la búsqueda de empleo mientras estudias1. Esto te permite adquirir experiencia laboral valiosa y mejorar tu inglés en un entorno profesional."
+            ,
+            sTitle3="Rica cultura y experiencia internacional"
+            ,
+            text3="Vivir en Inglaterra te permite sumergirte en una cultura rica y diversa. Desde la vibrante vida urbana de Londres hasta los paisajes históricos de ciudades como Bath y York, hay mucho por explorar2. Además, estarás rodeado de personas de todo el mundo, lo que te permitirá ampliar tus horizontes y desarrollar una perspectiva global."
+        />
+        <FormularioContacto
+            title="¿Quieres Estudiar y trabajar en Inglaterra?"
+        />
+    </main>
+</Layout>
