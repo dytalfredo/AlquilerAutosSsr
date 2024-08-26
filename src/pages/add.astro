@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Agregar un nuevo amigo">
+    <h1 class="text-center">Agregar un nuevo amigo</h1>
+    <form
+        method="post"
+        action="/api/terminos"
+        class="flex flex-col place-content-center justify-center items-center align-middle w-full"
+    >
+        <!-- 
+    const palabras: string[] = [formData?.get("palabra1")?.toString() ?? "", formData?.get("palabra2")?.toString() ?? ""];
+    const id = formData.get("id")?.toString();
+    const nombre = formData.get("nombre")?.toString();
+    const definicion = formData.get("definicion")?.toString();
+    const area = formData.get("area")?.toString();
+    const etimologia = formData.get("etimologia")?.toString();
+    const años = formData.get("año")?.toString(); -->
+
+        <label for="id">ID</label>
+        <input type="text" id="id" name="id" class="bg-slate-300" />
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" class="bg-slate-300" />
+        <label for="definicion">Definicion</label>
+        <input
+            type="text"
+            id="definicion"
+            name="definicion"
+            class="bg-slate-300"
+        />
+        <label for="area">Area</label>
+        <input type="text" id="area" name="area" class="bg-slate-300" />
+        <label for="etimologia">Etimologia</label>
+        <input
+            type="text"
+            id="etimologia"
+            name="etimologia"
+            class="bg-slate-300"
+        />
+        <label for="fecha">Fecha</label>
+        <input type="text" id="fecha" name="fecha" class="bg-slate-300" />
+        <label for="palabra1">Palabra1</label>
+        <input type="text" id="palabra1" name="palabra1" class="bg-slate-300" />
+        <label for="palabra2">Palabra2</label>
+        <input type="text" id="palabra2" name="palabra2" class="bg-slate-300" />
+
+        <button type="submit">Añadir amigo</button>
+    </form>
+</Layout>

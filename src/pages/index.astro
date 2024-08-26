@@ -13,72 +13,10 @@ import Why from "../components/Why.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout
-	title="Asesores y Abogados Migratorios Europeo para Inglés"
-	url_canonical="https://latamstudyvisa.com/"
-	og_title="Estudia inglés mientras trabajas en europa"
-	og_descrip="Contamos con expertos abogados migratorios con 100% de las visas aprobadas"
-	og_img="/opengraph/openGraph-Estudia-Ingles.jpg"
-	og_img_alt="Diferentes destinos para estudiar inglés"
->
+<Layout title="Asesores y Abogados Migratorios Europeo para Inglés">
 	<main class="view">
 		<HeroSeccionIndex />
-
-		<div class="blockAnimation">
-			<TravelsCards />
-		</div>
-		<ButtonScroll />
-		<div class="blockAnimation">
-			<Why />
-		</div>
-
-		<BentoProcess />
-
-		<div class="">
-			<CallToActionCountrys />
-		</div>
-		<div class="blockAnimation2 animate-spin">
-			<Feature />
-		</div>
-		<a href="/register" class="mx-0 bg-slate-400">IR A REGISTRAR</a>
-		<FormularioContacto
-			title="¿Quieres Estudiar y trabajar en El extranjero? PRUEBA ONLINE"
-		/>
 	</main>
 </Layout>
 
-<style>
-	@keyframes appear {
-		from {
-			opacity: 0;
-			scale: 0.5;
-		}
-		to {
-			opacity: 1;
-			scale: 1;
-		}
-	}
-
-	@keyframes anim2 {
-		from {
-			opacity: 0;
-			transform: translateY(-200px);
-		}
-		to {
-			opacity: 1;
-			transform: translateY(0px);
-		}
-	}
-
-	.blockAnimation {
-		animation: appear linear;
-		animation-timeline: view();
-		animation-range: entry 0% cover 40%;
-	}
-
-	.blockAnimation2 {
-		animation: anim2 linear;
-		animation-timeline: view();
-		animation-range: entry 0% cover 30%;
-	}
-</style>
+<style></style>
