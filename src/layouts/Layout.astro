@@ -1,6 +1,4 @@
 ---
-import Header from "../components/Header.astro";
-
 interface Props {
 	title: string;
 	url_canonical?: string;
@@ -12,12 +10,6 @@ interface Props {
 
 const { title, url_canonical, og_title, og_descrip, og_img, og_img_alt } =
 	Astro.props;
-
-import "@fontsource/lato";
-import "@fontsource/abril-fatface";
-import Footer from "../components/Footer.astro";
-import Adverten from "../components/Adverten.astro";
-import Formulario2 from "../components/Formulario2.astro";
 ---
 
 <html lang="es">
@@ -32,8 +24,6 @@ import Formulario2 from "../components/Formulario2.astro";
 		<!-- End GetResponse Analytics -->
 	</head>
 	<body>
-		<Header />
-
 		<slot />
 	</body>
 </html>
