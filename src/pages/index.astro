@@ -26,18 +26,58 @@ const terminos = terminosSnapshot.docs.map((doc) => ({
 
 <Layout title="Glosario Informatica">
 	<div class="">
-		<h1 class="text-3xl text-center font-bold">Glosario Informatica</h1>
-		<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 px-3">
+		<h1 class="mt-4 text-5xl text-center text-gray-200 font-bold">
+			Glosario Informatica
+		</h1>
+		<div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-4 px-3">
 			{
 				terminos.map((termino) => (
-					<div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-						<h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">{`${termino.nombre} (${termino.fecha})`}</h5>
-						<p class="font-normal text-xs text-gray-700 dark:text-gray-400">
-							{termino.definicion}
-						</p>
+					<div class="fondo relative transition-all duration-[.3s] max-md:h-44 max-md:mb-10 h-28    ease-in-out">
+						<div class="max-w-sm p-2 cursor-pointer   bg-white/10 max-md:h-full  md:h-[125px]  place-content-center border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+							<h5 class="mb-2 text-lg font-bold tracking-tight text-gray-200">{`${termino.nombre} (${termino.fecha})`}</h5>
+							<p class="font-normal text-xs text-gray-400">
+								{termino.definicion}
+							</p>
+						</div>
+						<div class="etimologia opacity-0 max-w-sm p-6 cursor-pointer md:px-16    place-content-center">
+							<h5 class="font-normal text-sm text-center text-gray-50">
+								{termino.etimologia}
+							</h5>
+						</div>
 					</div>
 				))
 			}
 		</div>
 	</div>
 </Layout>
+<style>
+	.fondo:hover {
+		transform: perspective(450px) rotateX(40deg) translateY(-25%)
+			translateZ(0);
+	}
+	.etimologia {
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out;
+	}
+
+	.fondo::before {
+		border-radius: 100%;
+		content: "";
+		position: absolute;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		background-image: linear-gradient(to bottom, transparent 80%);
+		opacity: 0;
+		transition: all 0.3s ease;
+	}
+
+	.fondo:hover::before {
+		opacity: 1;
+	}
+
+	.fondo:hover .etimologia {
+		opacity: 1;
+		transform: translateY(-20%);
+	}
+</style>
