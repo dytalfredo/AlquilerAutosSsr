@@ -1,22 +1,43 @@
 ---
-// Component Imports
-import BentoProcess from "../components/BentoProcess.astro";
-import Button from "../components/Button.astro";
-import ButtonScroll from "../components/ButtonScroll.astro";
-import CallToActionCountrys from "../components/CallToActionCountrys.astro";
-import Feature from "../components/Feature.astro";
-import HeroSeccionIndex from "../components/HeroSeccionIndex.astro";
-import Testimonials from "../components/Testimonials.astro";
-import TravelsCards from "../components/TravelsCards.astro";
-import FormularioContacto from "../components/FormularioContacto.astro";
-import Why from "../components/Why.astro";
 import Layout from "../layouts/Layout.astro";
+import { app } from "../firebase/server";
+import { getFirestore } from "firebase-admin/firestore";
+
+interface Termino {
+	nombre: string;
+	palabras: string[];
+	definicion: string;
+	area: string;
+	etimologia: string;
+	año: string;
+	id: string;
+	fecha: number;
+}
+
+const db = getFirestore(app);
+const terminoRef = db.collection("terminos");
+
+const terminosSnapshot = await terminoRef.get();
+const terminos = terminosSnapshot.docs.map((doc) => ({
+	id: doc.id,
+	...doc.data(),
+})) as Termino[];
 ---
 
-<Layout title="Asesores y Abogados Migratorios Europeo para Inglés">
-	<main class="view">
-		<HeroSeccionIndex />
-	</main>
+<Layout title="Glosario Informatica">
+	<div class="">
+		<h1 class="text-3xl text-center font-bold">Glosario Informatica</h1>
+		<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 px-3">
+			{
+				terminos.map((termino) => (
+					<div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+						<h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">{`${termino.nombre} (${termino.fecha})`}</h5>
+						<p class="font-normal text-xs text-gray-700 dark:text-gray-400">
+							{termino.definicion}
+						</p>
+					</div>
+				))
+			}
+		</div>
+	</div>
 </Layout>
-
-<style></style>
