@@ -38,7 +38,7 @@ const terminos = terminosSnapshot.docs.map((doc) => ({
 							<p class="font-normal text-xs text-gray-400">
 								{termino.definicion}
 							</p>
-							<p class="text-[8px] absolute bottom-0 md:-bottom-3 left-0 right-0 text-white text-center">
+							<p class=" boton text-[8px] absolute opacity-1 bottom-0 md:-bottom-3 left-0 right-0 text-white text-center">
 								toque para *Etimología*
 							</p>
 						</div>
@@ -62,6 +62,9 @@ const terminos = terminosSnapshot.docs.map((doc) => ({
 		opacity: 0;
 		transition: opacity 0.3s ease-in-out;
 	}
+	.boton {
+		transition: opacity 0.3s ease-in-out;
+	}
 
 	.fondo::before {
 		border-radius: 100%;
@@ -82,5 +85,13 @@ const terminos = terminosSnapshot.docs.map((doc) => ({
 	.fondo:hover .etimologia {
 		opacity: 1;
 		transform: translateY(10%);
+	}
+	.fondo:hover .etimologia {
+		opacity: 1;
+		transform: translateY(10%);
+	}
+	.fondo:hover .boton {
+		opacity: 0;
+		transform: translateY(-30%);
 	}
 </style>
